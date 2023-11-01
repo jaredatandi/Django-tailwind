@@ -17,7 +17,10 @@ from django.conf import settings
 from django.contrib import admin
 from django.urls import path
 
+from . import views
+
 urlpatterns = [
+    path("", views.home_views, name='home'),
     path('admin/', admin.site.urls),
 ]
 
